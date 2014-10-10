@@ -1,0 +1,166 @@
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville|Muli);
+
+html, body {
+	text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-family: Libre Baskerville, serif;
+  font-size:14px;
+  
+}
+
+header {
+  z-index: 200;
+	height:100px;
+	background-color: #343434;
+	clear:both;
+  position: relative;
+  
+}
+
+header h1 {
+	padding-top: 12px;
+	padding-left: 12px;
+	display:block;
+	float:left;
+}
+
+header nav {
+	display: block;
+	float: right;
+	line-height: 100px;
+	padding-right: 20px;
+}
+
+header nav a {
+	text-decoration: none;
+	font-family: Muli;
+	color:#fff;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+header nav a ul.active {
+  border-bottom: 1px solid #fff;
+}
+
+header nav a ul {
+	display: inline;
+	margin-left: 20px;
+}
+
+header nav a ul:hover {
+	border-bottom: 1px solid #fff;
+}
+
+
+/* home */
+
+.background-pic-home {
+  background: url('../images/sunset-hair.jpg') no-repeat center;
+ background-size: 100%;
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index: 1;
+  display: block;
+}
+
+.home-hero {
+  height:460px;
+  margin-top:75px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.home-hero img {
+  position: relative;
+  z-index: 200;
+}
+
+/* about */
+
+.background-pic-about {
+  background: url('../images/hairaddress.jpg') no-repeat center;
+  background-size: 100%;
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index: 1;
+  display: block;
+}
+
+.about-content {
+  height:460px;
+  position:relative;
+  background-color: #5c5c5c;
+  z-index: 200;
+  margin-top: 250px;
+  color: #fff;
+}
+
+.about-blurb {
+  padding:20px;
+  line-height: 1.5;
+}
+
+.about-blurb h3 {
+  text-transform: uppercase;
+  font-family: Muli;
+  font-size: 18px;
+
+}
+
+.about-image {
+  float:right;
+  padding-top:20px;
+}
+
+.about-image img {
+  width:100%;
+  
+}
+
+
+footer {
+  position: relative;
+  z-index: 200;
+  height:100px;
+  background-color: #343434;
+  padding:20px;
+  display:block;
+}
+
+footer h3 {
+  color:#fff;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer p {
+  color:#fff;
+  font-size: 12px; 
+  line-height: 1.5; 
+}
+
+footer p a {
+  color:#fff;
+}
+
+footer a.social {
+  margin-right: 5px;
+}
+
+.four.columns.margin {
+  margin-left: 20px;
+}
+
+.four.columns.margin.last {
+  width:150px;
+}
+
+
