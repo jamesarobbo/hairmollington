@@ -124,6 +124,53 @@ header nav a ul:hover {
   
 }
 
+/*services*/
+
+.services-content {
+ 
+  
+}
+
+.services-content .hair, .services-content .beauty  {
+  text-align: center;
+  font-size: 18px;
+  font-family: Muli;
+  text-transform: uppercase;
+  margin-top: 75px;
+}
+
+.services-content .hair img, .services-content .beauty img {
+  margin-top: 20px;
+}
+
+.services-content .row {
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+
+.services-content .row .middle table, .services-content .row .left table, .services-content .row .right table {
+  width: 100%;
+  clear:both;
+}
+
+thead {
+  float: left;
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+table  {
+  line-height: 1.2;
+}
+
+.price {
+  float:right;
+
+ 
+}
+
+
+
 
 footer {
   position: relative;
