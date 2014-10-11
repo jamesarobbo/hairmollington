@@ -4,7 +4,7 @@ html, body {
 	text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-family: Libre Baskerville, serif;
-  font-size:14px;
+  font-size:12px;
   
 }
 
@@ -83,7 +83,8 @@ header nav a ul:hover {
 
 .background-pic-about {
   background: url('../images/hairaddress.jpg') no-repeat center;
-  background-size: 100%;
+  background-size: cover;
+
   position:fixed;
   left:0;
   right:0;
@@ -168,6 +169,52 @@ table  {
 
  
 }
+
+
+/*work*/
+
+.background-pic-work {
+  background: url('../images/shoes.jpg') no-repeat center;
+  background-size: cover;
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index: 1;
+  display: block;
+}
+
+.work-content {
+  margin-top: 100px;
+
+  z-index: 200;
+  display: block;
+  position: relative;
+}
+
+.work-content .work-hero {
+  width:250px;
+  margin-bottom: 100px;
+  padding:20px;
+
+}
+
+.work-content h3 {
+  text-align: center; 
+  font-size: 18px;
+  font-family: Muli;
+}
+
+.work-content img {
+  width: 100%;
+}
+
+.work-content .row {
+  margin-bottom: 50px;
+}
+
+
 
 
 
