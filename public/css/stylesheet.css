@@ -33,7 +33,7 @@ header nav {
 
 header nav a {
 	text-decoration: none;
-	font-family: Muli;
+	font-family: Muli, Arial, sans-serif;
 	color:#fff;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -57,7 +57,7 @@ header nav a ul:hover {
 
 .background-pic-home {
   background: url('../images/sunset-hair.jpg') no-repeat center;
- background-size: 100%;
+ background-size: cover;
   position:fixed;
   left:0;
   right:0;
@@ -97,10 +97,10 @@ header nav a ul:hover {
 .about-content {
   height:460px;
   position:relative;
-  background-color: #5c5c5c;
+  background-color: #FDFDFD;
   z-index: 200;
   margin-top: 250px;
-  color: #fff;
+  color: ;
 }
 
 .about-blurb {
@@ -127,8 +127,23 @@ header nav a ul:hover {
 
 /*services*/
 
+.background-pic-services {
+
+  background-color: #FDFDFD;
+    background-size: cover;
+
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index: 1;
+  display: block;
+}
+
 .services-content {
- 
+  position: relative;
+ z-index: 200;
   
 }
 
@@ -187,7 +202,7 @@ table  {
 
 .work-content {
   margin-top: 100px;
-
+  
   z-index: 200;
   display: block;
   position: relative;
@@ -213,6 +228,86 @@ table  {
 .work-content .row {
   margin-bottom: 50px;
 }
+
+
+/*Team */
+
+.background-pic-team {
+  background: url('../images/sunset-girl.jpg') no-repeat center;
+ background-size: cover;
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index: 1;
+  display: block;
+}
+
+.team-content {
+  height:460px;
+  position:relative;
+  background-color: #FDFDFD;
+  z-index: 200;
+  margin-top: 280px;
+  padding:20px;
+  line-height: 1.5;
+}
+
+.team-content .row h3 {
+  font-family: Muli, Arial, sans-serif;
+  font-size: 18px;
+
+}
+
+/*Salon*/
+
+.background-pic-salon {
+  background: url('../images/map.jpg') no-repeat center;
+ background-size: cover;
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  z-index: 1;
+  display: block;
+}
+
+.salon-content {
+  height:460px;
+  position:relative;
+  background-color: #FDFDFD;
+  z-index: 200;
+  margin-top: 280px;
+  line-height: 1.5;
+  padding-top: 20px;
+  padding-left:10px;
+  padding-right: 10px;
+
+}
+
+.salon-content h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: Muli, Arial, sans-serif;
+}
+
+.salon-content .address {
+  
+}
+
+.salon-content .times, .salon-content .contact {
+  margin-top: 20px;
+  
+}
+
+.salon-content .map {
+  display: block;
+  float: right;
+  position: relative;
+}
+
 
 
 
