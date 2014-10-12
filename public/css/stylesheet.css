@@ -281,9 +281,7 @@ table  {
   z-index: 200;
   margin-top: 280px;
   line-height: 1.5;
-  padding-top: 20px;
-  padding-left:10px;
-  padding-right: 10px;
+  padding:20px;
 
 }
 
@@ -293,9 +291,6 @@ table  {
   font-family: Muli, Arial, sans-serif;
 }
 
-.salon-content .address {
-  
-}
 
 .salon-content .times, .salon-content .contact {
   margin-top: 20px;
