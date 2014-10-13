@@ -245,7 +245,7 @@ table  {
 }
 
 .team-content {
-  height:460px;
+  height:auto;
   position:relative;
   background-color: #FDFDFD;
   z-index: 200;
@@ -259,6 +259,10 @@ table  {
   font-size: 16px;
   text-transform: uppercase;
 
+}
+
+.team-content .image img {
+  float:right;
 }
 
 /*Salon*/
