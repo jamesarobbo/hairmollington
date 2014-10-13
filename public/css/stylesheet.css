@@ -3,7 +3,7 @@
 html, body {
 	text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  font-family: Libre Baskerville, serif;
+  font-family: Libre Baskerville, "Times New Roman", serif;
   font-size:12px;
   
 }
@@ -36,7 +36,7 @@ header nav a {
 	font-family: Muli, Arial, sans-serif;
 	color:#fff;
 	text-transform: uppercase;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 header nav a ul.active {
@@ -110,8 +110,8 @@ header nav a ul:hover {
 
 .about-blurb h3 {
   text-transform: uppercase;
-  font-family: Muli;
-  font-size: 18px;
+  font-family: Muli, Arial, sans-serif;
+  font-size: 16px;
 
 }
 
@@ -202,10 +202,10 @@ table  {
 
 .work-content {
   margin-top: 100px;
-  
   z-index: 200;
   display: block;
   position: relative;
+
 }
 
 .work-content .work-hero {
@@ -215,20 +215,20 @@ table  {
 
 }
 
-.work-content h3 {
-  text-align: center; 
-  font-size: 18px;
-  font-family: Muli;
-}
-
 .work-content img {
   width: 100%;
 }
 
 .work-content .row {
-  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ margin-bottom: 0;
+  background-color: #fdfdfd;
 }
 
+.work-content .row .five.columns {
+
+}
 
 /*Team */
 
@@ -256,7 +256,8 @@ table  {
 
 .team-content .row h3 {
   font-family: Muli, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
+  text-transform: uppercase;
 
 }
 
@@ -287,8 +288,10 @@ table  {
 
 .salon-content h3 {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 14px;
   font-family: Muli, Arial, sans-serif;
+  
+
 }
 
 
@@ -318,9 +321,9 @@ footer {
   display:block;
 }
 
-footer h3 {
+footer h4 {
   color:#fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   margin-bottom: 10px;
 }
