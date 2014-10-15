@@ -84,7 +84,7 @@ header nav a ul:hover {
 /* about */
 
 .background-pic-about {
-  background: url('../images/hairaddress.jpg') no-repeat center;
+  background: url('../images/door.jpg') no-repeat center;
   background-size: cover;
 
   position:fixed;
@@ -191,7 +191,7 @@ table  {
 /*work*/
 
 .background-pic-work {
-  background: url('../images/shoes.jpg') no-repeat center;
+  background: url('../images/inside2.jpg') no-repeat center;
   background-size: cover;
   position:fixed;
   left:0;
@@ -203,7 +203,7 @@ table  {
 }
 
 .work-content {
-  margin-top: 100px;
+  margin-top: 180px;
   z-index: 200;
   display: block;
   position: relative;
