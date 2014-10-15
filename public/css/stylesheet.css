@@ -66,7 +66,7 @@ header nav a ul:hover {
   top:0;
   bottom:0;
   z-index: 1;
-  display: block;
+  /*display: block;*/
 }
 
 .home-hero {
@@ -86,14 +86,13 @@ header nav a ul:hover {
 .background-pic-about {
   background: url('../images/frontdoor.jpg') no-repeat center;
   background-size: cover;
-
   position:fixed;
   left:0;
   right:0;
   top:0;
   bottom:0;
   z-index: 1;
-  display: block;
+  /*display: block;*/
 }
 
 .about-content {
@@ -102,7 +101,6 @@ header nav a ul:hover {
   background-color: #FDFDFD;
   z-index: 200;
   margin-top: 290px;
-  color: ;
 }
 
 .about-blurb {
@@ -140,7 +138,7 @@ header nav a ul:hover {
   top:0;
   bottom:0;
   z-index: 1;
-  display: block;
+  /*display: block;*/
 }
 
 .services-content {
@@ -199,7 +197,7 @@ table  {
   top:0;
   bottom:0;
   z-index: 1;
-  display: block;
+  /*display: block;*/
 }
 
 .work-content {
@@ -243,7 +241,7 @@ table  {
   top:0;
   bottom:0;
   z-index: 1;
-  display: block;
+  /*display: block;*/
 }
 
 .team-content {
@@ -278,7 +276,7 @@ table  {
   top:0;
   bottom:0;
   z-index: 1;
-  display: block;
+  /*display: block;*/
 }
 
 .salon-content {
@@ -324,7 +322,7 @@ footer {
   height:100px;
   background-color: #343434;
   padding:20px;
-  display:block;
+  /*display:block;*/
 }
 
 footer h4 {
