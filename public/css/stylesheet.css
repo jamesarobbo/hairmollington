@@ -52,6 +52,9 @@ header nav a ul:hover {
 	border-bottom: 1px solid #fff;
 }
 
+header .menu, header nav.mobile {
+  display: none;
+}
 
 
 
@@ -106,6 +109,7 @@ header nav a ul:hover {
 .about-blurb {
   padding:20px;
   line-height: 1.5;
+
 }
 
 .about-blurb h3 {
@@ -150,7 +154,7 @@ header nav a ul:hover {
 .services-content .hair, .services-content .beauty  {
   text-align: center;
   font-size: 18px;
-  font-family: Muli;
+  font-family: Muli, Arial, sans-serif;
   text-transform: uppercase;
   margin-top: 75px;
 }
@@ -226,9 +230,7 @@ table  {
   background-color: #fdfdfd;
 }
 
-.work-content .row .five.columns {
 
-}
 
 /*Team */
 
@@ -260,6 +262,7 @@ table  {
   text-transform: uppercase;
 
 }
+
 
 .team-content .image img {
   float:right;
@@ -307,9 +310,27 @@ table  {
 }
 
 
-.salon-content .times, .salon-content .contact {
+
+
+.salon-content .times, .salon-content .contact, .salon-content .follow {
   margin-top: 20px;
   
+}
+
+.salon-content .follow a.social {
+  padding-right: 5px;
+
+
+}
+
+.salon-content .follow a.social img {
+  margin-top: 5px;
+}
+
+.salon-content .follow a.social.facebook img {
+  border:1px solid #343434;
+  border-radius: 2px;
+  margin-top: 10px;
 }
 
 .salon-content .map {
@@ -317,12 +338,6 @@ table  {
   float: right;
   position: relative;
 }
-
-
-
-
-
-
 
 footer {
   position: relative;
@@ -361,5 +376,124 @@ footer a.social {
 .four.columns.margin.last {
   width:150px;
 }
+
+@media only screen and (max-width: 767px) {
+
+
+header h1 {
+  padding-top: 0;
+  line-height: 100px;
+}
+
+header h1 a img {
+  width: 120px;
+ vertical-align: middle;
+}
+
+header nav {
+  display: none;
+  padding-right: 0;
+}
+
+header .menu {
+  display: block;
+  float: right;
+  line-height: 100px;
+  margin-right: 20px;
+  color:#fff;
+  font-family: Muli, Arial, sans-serif;
+  cursor: pointer;
+}
+
+header nav.mobile {
+  display: inline-block;
+  background-color: #343434;
+  position: relative;
+  clear: both;
+  float: left;
+  display: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+header nav.mobile a li {
+  list-style: none;
+  line-height: 50px;
+  padding-left: 12px;
+  border-top: 1px solid #6d6c6c;
+
+}
+
+.home-hero {
+  padding-left: 0;
+
+}
+
+.home-hero img {
+  margin-top: 50px;
+}
+
+footer {
+  display:none;
+  position: relative;
+  
+}
+
+footer .four.columns {
+  clear: both;
+}
+
+table {
+  margin-top: 20px;
+}
+
+.about-content .about-blurb p {
+  padding-right: 40px;
+
+}
+
+.about-image img {
+  display: none;
+}
+
+.work-content .work-hero img {
+  display:none;
+}
+
+.work-content .row {
+  padding:10px;
+}
+
+.work-content .row .one-third.column {
+  
+  width: 100%;
+}
+
+.team-content .row .staff {
+  width: 100%;
+  position: relative;
+}
+
+.team-content .row .staff.six.columns.image {
+  text-align: center; 
+} 
+
+.team-content .row .staff img {
+  float: none;
+}
+
+.salon-content .seven.columns.address {
+  width: 100%;
+}
+
+.salon-content .map {
+  display: none;
+}
+
+
+
+
+
+}  
 
 
