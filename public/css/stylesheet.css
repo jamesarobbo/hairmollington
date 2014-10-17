@@ -309,6 +309,9 @@ table  {
   padding-top: 40px;
 }
 
+.salon-content .copyright {
+  display: none;
+}
 
 
 
@@ -490,6 +493,14 @@ table {
   display: none;
 }
 
+.salon-content .copyright {
+  margin-top: 20px;
+  display: block;
+}
+
+.salon-content .copyright a {
+  color:inherit;
+}
 
 
 
