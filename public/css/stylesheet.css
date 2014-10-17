@@ -54,6 +54,7 @@ header nav a ul:hover {
 
 header .menu, header nav.mobile {
   display: none;
+  z-index: 300;
 }
 
 
@@ -104,11 +105,14 @@ header .menu, header nav.mobile {
   background-color: #FDFDFD;
   z-index: 200;
   margin-top: 290px;
+  padding-bottom: 50px;
 }
 
 .about-blurb {
-  padding:20px;
   line-height: 1.5;
+  float: left;
+  position: relative;
+  padding-top: 20px;
 
 }
 
@@ -116,7 +120,6 @@ header .menu, header nav.mobile {
   text-transform: uppercase;
   font-family: Muli, Arial, sans-serif;
   font-size: 16px;
-
 }
 
 .about-image {
@@ -125,17 +128,17 @@ header .menu, header nav.mobile {
 }
 
 .about-image img {
-  width:100%;
-  
+  width:100%; 
 }
+
+
 
 /*services*/
 
 .background-pic-services {
 
   background-color: #FDFDFD;
-    background-size: cover;
-
+  background-size: cover;
   position:fixed;
   left:0;
   right:0;
@@ -147,9 +150,11 @@ header .menu, header nav.mobile {
 
 .services-content {
   position: relative;
- z-index: 200;
-  
+  z-index: 200;
+
+ 
 }
+
 
 .services-content .hair, .services-content .beauty  {
   text-align: center;
@@ -158,6 +163,7 @@ header .menu, header nav.mobile {
   text-transform: uppercase;
   margin-top: 75px;
 }
+
 
 .services-content .hair img, .services-content .beauty img {
   margin-top: 20px;
@@ -283,7 +289,7 @@ table  {
 }
 
 .salon-content {
-  height:460px;
+  height:480px;
   position:relative;
   background-color: #FDFDFD;
   z-index: 200;
@@ -451,14 +457,19 @@ table {
   margin-top: 20px;
 }
 
-.about-content .about-blurb p {
-  padding-right: 40px;
-
-}
-
 .about-image img {
   display: none;
 }
+
+.about-content .row {
+  margin-bottom: 0;
+}
+
+.about-content .about-blurb p, .about-content .about-blurb h3 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 
 .work-content .work-hero img {
   display:none;
