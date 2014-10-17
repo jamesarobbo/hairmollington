@@ -486,7 +486,7 @@ table {
   float: none;
 }
 
-.salon-content .seven.columns.address {
+.salon-content .seven.columns.address, .salon-content .seven.columns.contact {
   width: 100%;
 }
 
