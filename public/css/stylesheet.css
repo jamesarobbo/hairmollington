@@ -106,16 +106,15 @@ header .menu, header nav.mobile {
   z-index: 200;
   margin-top: 290px;
   padding-bottom: 50px;
+  margin-bottom: 0;
 }
 
 .about-blurb {
   line-height: 1.5;
   float: left;
   position: relative;
-
-
+  padding-top: 20px;
 }
-
 
 
 .about-blurb h3 {
