@@ -100,13 +100,12 @@ header .menu, header nav.mobile {
 }
 
 .about-content {
-  height:480px;
+  height:500px;
   position:relative;
   background-color: #FDFDFD;
   z-index: 200;
   margin-top: 290px;
-  padding-bottom: 50px;
-  margin-bottom: 0;
+ 
 }
 
 .about-blurb {
@@ -469,6 +468,7 @@ table {
 .about-content .about-blurb p, .about-content .about-blurb h3 {
   padding-right: 20px;
   padding-left: 20px;
+
 }
 
 
@@ -509,7 +509,10 @@ table {
 .salon-content .copyright {
   margin-top: 20px;
   display: block;
+
 }
+
+
 
 .salon-content .copyright a {
   color:inherit;
