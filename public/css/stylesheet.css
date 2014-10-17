@@ -100,7 +100,7 @@ header .menu, header nav.mobile {
 }
 
 .about-content {
-  height:460px;
+  height:480px;
   position:relative;
   background-color: #FDFDFD;
   z-index: 200;
