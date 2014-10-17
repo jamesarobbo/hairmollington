@@ -406,6 +406,7 @@ header .menu {
   color:#fff;
   font-family: Muli, Arial, sans-serif;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 header nav.mobile {
@@ -501,6 +502,8 @@ table {
 .salon-content .copyright a {
   color:inherit;
 }
+
+
 
 
 
