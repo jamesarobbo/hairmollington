@@ -113,6 +113,8 @@ header .menu, header nav.mobile {
   float: left;
   position: relative;
   padding-top: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
 
 }
 
