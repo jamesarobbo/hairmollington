@@ -315,6 +315,10 @@ table  {
   padding-top: 40px;
 }
 
+.salon-content .seven.columns.address a {
+  display: none;
+}
+
 .salon-content .copyright {
   display: none;
 }
@@ -500,6 +504,11 @@ table {
 
 .salon-content .seven.columns.address, .salon-content .seven.columns.contact {
   width: 100%;
+}
+
+.salon-content .seven.columns.address a {
+  text-transform: uppercase;
+  display: inline;
 }
 
 .salon-content .map {
