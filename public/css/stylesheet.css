@@ -100,7 +100,7 @@ header .menu, header nav.mobile {
 }
 
 .about-content {
-  height:500px;
+  height:540px;
   position:relative;
   background-color: #FDFDFD;
   z-index: 200;
@@ -461,8 +461,8 @@ table {
   display: none;
 }
 
-.about-content .row {
-  margin-bottom: 0;
+.about-content {
+  
 }
 
 .about-content .about-blurb p, .about-content .about-blurb h3 {
