@@ -330,10 +330,15 @@ table  {
   
 }
 
-.salon-content .follow a.social {
-  padding-right: 5px;
+.salon-content .follow a {
+  text-decoration: none;
+  padding-right: 20px;
+  color:inherit;
+}
 
-
+.salon-content .follow a span {
+  margin-left: 10px;
+  
 }
 
 .salon-content .follow a.social img {
