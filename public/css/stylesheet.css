@@ -5,7 +5,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
   font-family: Libre Baskerville, "Times New Roman", serif;
   font-size:12px;
-  
+
 }
 
 header {
@@ -14,7 +14,7 @@ header {
 	background-color: #343434;
 	clear:both;
   position: relative;
-  
+
 }
 
 header h1 {
@@ -100,26 +100,42 @@ header .menu, header nav.mobile {
 }
 
 .about-content {
-  height:540px;
+  min-height:540px;
   position:relative;
   background-color: #FDFDFD;
   z-index: 200;
   margin-top: 290px;
- 
+  padding: 20px;
+
+}
+
+.about-content .sixteen.columns {
+  width: 100%;
+  margin: 0;
 }
 
 .about-blurb {
   line-height: 1.5;
-  float: left;
   position: relative;
-  padding-top: 20px;
+
 }
 
+.about-blurb .content {
+  padding-bottom: 20px;
+}
 
 .about-blurb h3 {
   text-transform: uppercase;
   font-family: Muli, Arial, sans-serif;
   font-size: 16px;
+}
+
+.about-blurb p {
+  padding-right: 10px;
+  }
+
+.about-blurb .image img {
+  width: 100%;
 }
 
 .about-image {
@@ -128,7 +144,7 @@ header .menu, header nav.mobile {
 }
 
 .about-image img {
-  width:100%; 
+  width:100%;
 }
 
 
@@ -152,11 +168,37 @@ header .menu, header nav.mobile {
   position: relative;
   z-index: 200;
 
- 
+
+}
+
+.services-content .row.product-list .left, .services-content .row.product-list .middle, .services-content .row.product-list .right{
+    display: inline-block;
+    width: 33.33%;
+    text-align: center;
+
+}
+
+.services-content .row.product-list .left {
+  float: left;
+}
+.services-content .row.product-list .right{
+  float: right;
+}
+
+.services-content .row.product-list li {
+  font-size: 14px;
+  padding: 10px 0;
+}
+.services-content .row.product-list li a {
+  text-decoration: none;
+  color: #343434;
+}
+.services-content .row.product-list li a:hover {
+  text-decoration: underline;
 }
 
 
-.services-content .hair, .services-content .beauty  {
+.services-content .hair, .services-content .beauty, .services-content .hair, .services-content .product  {
   text-align: center;
   font-size: 18px;
   font-family: Muli, Arial, sans-serif;
@@ -192,7 +234,7 @@ table  {
 .price {
   float:right;
 
- 
+
 }
 
 
@@ -232,8 +274,13 @@ table  {
 .work-content .row {
   padding-top: 20px;
   padding-bottom: 20px;
- margin-bottom: 0;
+  margin-bottom: 0;
   background-color: #fdfdfd;
+}
+
+.work-content .row .one-third.column {
+  height: 400px;
+  overflow: hidden;
 }
 
 
@@ -256,8 +303,8 @@ table  {
   height:auto;
   position:relative;
   background-color: #FDFDFD;
-  z-index: 200;
-  margin-top: 280px;
+  z-index: 10;
+  margin-top: 0;
   padding:20px;
   line-height: 1.5;
 }
@@ -269,9 +316,24 @@ table  {
 
 }
 
-
+.team-content .staff.sixteen.columns.image {
+  margin: 0;
+  width: 100%;
+}
 .team-content .image img {
-  float:right;
+  width: 100%;
+}
+
+.team-content .row .staff {
+  margin: 0;
+}
+
+.team-content .row .staff.eight.columns .content {
+  padding: 10px;
+}
+
+.team-content .row .staff.eight.columns .content h3, .team-content .row .staff.eight.columns .content span {
+  display: inline;
 }
 
 /*Salon*/
@@ -327,7 +389,7 @@ table  {
 
 .salon-content .times, .salon-content .contact, .salon-content .follow {
   margin-top: 20px;
-  
+
 }
 
 .salon-content .follow a {
@@ -338,7 +400,7 @@ table  {
 
 .salon-content .follow a span {
   margin-left: 10px;
-  
+
 }
 
 .salon-content .follow a.social img {
@@ -362,8 +424,9 @@ footer {
   z-index: 200;
   height:100px;
   background-color: #343434;
-  padding:20px;
   /*display:block;*/
+  display: table;
+  width: 100%;
 }
 
 footer h4 {
@@ -375,8 +438,9 @@ footer h4 {
 
 footer p {
   color:#fff;
-  font-size: 12px; 
-  line-height: 1.5; 
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 5px;
 }
 
 footer p a {
@@ -387,16 +451,35 @@ footer a.social {
   margin-right: 5px;
 }
 
+footer .row {
+  display: table-row;
+  width: 100%;
+}
+footer .row .content{
+  margin: 0 !important;
+  padding: 20px;
+  display: table-cell;
+}
+
+footer .row .four.columns .content {
+  word-wrap: break-word;
+}
+
 .four.columns.margin {
   margin-left: 20px;
 }
 
-.four.columns.margin.last {
-  width:150px;
+@media only screen and (max-width: 958px) {
+  footer .row .content{
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 767px) {
 
+.container {
+  width:100%;
+}
 
 header h1 {
   padding-top: 0;
@@ -405,7 +488,7 @@ header h1 {
 
 header h1 a img {
   width: 120px;
- vertical-align: middle;
+  vertical-align: middle;
 }
 
 header nav {
@@ -433,6 +516,7 @@ header nav.mobile {
   display: none;
   width: 100%;
   margin-bottom: 20px;
+  z-index: 20;
 }
 
 header nav.mobile a li {
@@ -453,14 +537,16 @@ header nav.mobile a li {
 }
 
 footer {
-  display:none;
+  /*display:none;*/
   position: relative;
-  
+
 }
 
 footer .four.columns {
   clear: both;
+  margin: 0 !important;
 }
+
 
 table {
   margin-top: 20px;
@@ -470,13 +556,20 @@ table {
   display: none;
 }
 
-.about-content {
-  
+.about-content .sixteen.columns {
+  width: 100%;
+}
+.about-content .sixteen.columns .ten.columns.about-blurb {
+  width: 100% ;
+}
+
+.about-content .about-blurb p {
+/*  padding-right: 10px;*/
 }
 
 .about-content .about-blurb p, .about-content .about-blurb h3 {
-  padding-right: 20px;
-  padding-left: 20px;
+/*  padding-right: 20px;
+  padding-left: 20px;*/
 
 }
 
@@ -490,9 +583,10 @@ table {
 }
 
 .work-content .row .one-third.column {
-  
   width: 100%;
+  margin-bottom: 20px;
 }
+
 
 .team-content .row .staff {
   width: 100%;
@@ -500,8 +594,8 @@ table {
 }
 
 .team-content .row .staff.six.columns.image {
-  text-align: center; 
-} 
+  text-align: center;
+}
 
 .team-content .row .staff img {
   float: none;
@@ -532,11 +626,19 @@ table {
   color:inherit;
 }
 
+.services-content .five.columns, .services-content .six.columns  {
+  width: 100%;
+
+}
+.services-content .five.columns .content, .services-content .six.columns .content {
+  padding: 10px;
+}
 
 
 
 
 
-}  
+
+}
 
 
