@@ -14,10 +14,15 @@
   <link rel="stylesheet" href="../css/fontello-codes.css">
   <link rel="stylesheet" href="../css/fontello-ie7.css">
   <link rel='icon' type='image/x-icon' href='../images/faviconlogo.ico' />
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" media="all" />
 
 
-	<script src="../js/jquery.js"></script>
-	<script src="../js/script.js"></script>
+  <script src="../js/jquery.js"></script>
+  <script
+  src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -48,19 +53,24 @@
         <a href="/salon"><ul>Salon</ul></a>
       </nav>
 
-      <div class="menu">
+      <div class="menu trigger-toggle-menu" data-target=".collapsing-dropdown">
         <i class="icon-menu"></i><span>Menu</span>
       </div>
 
-      <nav class = "mobile">
-        <a href="/about"><li>About</li></a>
-        <a href="/services"><li>Services</li></a>
-        <a href="/work"><li>Our Work</li></a>
-        <a href="/team"><li>Our Team</li></a>
-        <a href="/salon"><li>Salon</li></a>
-      </nav>
-
     </header>
+
+    <div class="collapsing-dropdown">
+      <button class='trigger-toggle-menu close' data-target=".collapsing-dropdown">
+        <image src="../images/cancel.png" alt="" width="20px">
+      </button>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/work">Our Work</a></li>
+        <li><a href="/team">Our Team</a></li>
+        <li><a href="/salon">Salon</a></li>
+      </ul>
+    </div>
 
     <div class="team-content">
       <div class="row">
@@ -72,7 +82,7 @@
       <div class="row">
         <div class="staff eight columns">
           <div class="content">
-            <h3>Alison</h3>&nbsp;<span>(left)</span>
+            <h3>Alison</h3>
             <p>From gelish nails to sports injury massage or even a relaxing deluxe facial, Alison offers everything you need to look and feel beautiful.</p>
             <!-- Ten years -->
           </div>
@@ -80,7 +90,7 @@
 
         <div class="staff eight columns">
           <div class="content">
-            <h3>Jo</h3>&nbsp;<span>(second from left)</span>
+            <h3>Jo</h3>
             <p>Jo has been in the beauty industry for more than 18 years. She is qualified in semi-permanent makeup & non-surgical beauty treatments such as Dermaroller.</p>
             <!-- Ten years -->
           </div>
@@ -89,7 +99,7 @@
       <div class="row">
         <div class="staff eight columns">
           <div class="content">
-            <h3>Jessica</h3>&nbsp;<span>(third from left)</span>
+            <h3>Jessica</h3>
             <p>Jess is not only the owner, but a stylist and colour & extensions specialist. She strives for the salon to provide a combination of brilliant customer service and outstanding treatments. To Jess, it's most important that each customer feels comfortable during their stay and feels like a changed person when they leave. </p>
             <!-- Ten years -->
           </div>
@@ -97,7 +107,7 @@
 
         <div class="staff eight columns">
           <div class="content">
-            <h3>Alisa</h3>&nbsp;<span>(far right)</span>
+            <h3>Alisa</h3>
             <p>More than 17 years hairdressing experience & a Wella colour expert to boot. Alisa offers a wide range of hair treatments and produces second to none Kerastraight results. Free consultations!</p>
           </div>
         </div>
@@ -114,8 +124,8 @@
 
         <div class="staff eight columns">
           <div class="content">
-            <h3>Alison/Lucy/Jessica</h3>
-            <p>Nail and beauty specialists. From gelish nails to sports injury massage or even a relaxing deluxe facial, we offer everything you need to look and feel beautiful.</p>
+            <h3>Lianne</h3>
+            <p>Of her 13 years in the salon industry, Lianne has spent 8 as a fully qualified nail technician, beauty therapist and dermalogica skin specialist. As a proud member of the Hair @ Mollington Grange team, she strives to deliver the highest quality nails and treatments by only using the best product lines including NSI, CND dermalogica and skin base.</p>
           </div>
         </div>
 

@@ -4,12 +4,12 @@ html, body {
 	text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-family: Libre Baskerville, "Times New Roman", serif;
-  font-size:12px;
+  font-size:14px;
 
 }
 
 header {
-  z-index: 200;
+  z-index: 1000;
 	height:100px;
 	background-color: #343434;
 	clear:both;
@@ -57,12 +57,14 @@ header .menu, header nav.mobile {
   z-index: 300;
 }
 
-
+.collapsing-dropdown {
+  display: none;
+}
 
 /* home */
 
 .background-pic-home {
-  background: url('../images/sunset-hair.jpg') no-repeat center;
+  background: url('../images/salon.jpg') no-repeat center;
  background-size: cover;
   position:fixed;
   left:0;
@@ -85,10 +87,25 @@ header .menu, header nav.mobile {
   z-index: 200;
 }
 
+.home-hero .hero {
+  z-index: 100;
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 4px 2px 2px rgba(0, 0, 0, .5);
+  line-height: 1.2;
+}
+
+.home-hero .hero span {
+  font-size: 25px;
+  line-height: 1.2;
+}
+
 /* about */
 
 .background-pic-about {
-  background: url('../images/frontdoor.jpg') no-repeat center;
+  background: url('../images/salon.jpg') no-repeat center;
   background-size: cover;
   position:fixed;
   left:0;
@@ -100,11 +117,9 @@ header .menu, header nav.mobile {
 }
 
 .about-content {
-  min-height:540px;
   position:relative;
   background-color: #FDFDFD;
   z-index: 200;
-  margin-top: 290px;
   padding: 20px;
 
 }
@@ -203,12 +218,13 @@ header .menu, header nav.mobile {
   font-size: 18px;
   font-family: Muli, Arial, sans-serif;
   text-transform: uppercase;
-  margin-top: 75px;
+  margin-top: 50px;
 }
 
 
 .services-content .hair img, .services-content .beauty img {
-  margin-top: 20px;
+  width: 20px;
+  vertical-align: middle;
 }
 
 .services-content .row {
@@ -241,7 +257,7 @@ table  {
 /*work*/
 
 .background-pic-work {
-  background: url('../images/inside.jpg') no-repeat center;
+  background: url('../images/salon.jpg') no-repeat center;
   background-size: cover;
   position:fixed;
   left:0;
@@ -253,34 +269,36 @@ table  {
 }
 
 .work-content {
-  margin-top: 180px;
   z-index: 200;
   display: block;
   position: relative;
-
-}
-
-.work-content .work-hero {
-  width:250px;
-  margin-bottom: 100px;
-  padding:20px;
-
+  background: white;
+  padding: 20px;
 }
 
 .work-content img {
-  width: 100%;
+  max-width: 100%;
 }
 
-.work-content .row {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-bottom: 0;
-  background-color: #fdfdfd;
+.work-content .grid {
+  margin: 0 auto;
 }
 
-.work-content .row .one-third.column {
-  height: 400px;
-  overflow: hidden;
+.work-content .grid .grid-item, .work-content .grid .grid-sizer {
+  width: 22%;
+}
+
+.work-content .grid .grid-item {
+  margin-top: 4%;
+}
+
+.work-content .grid .gutter-sizer {
+  width: 4%;
+}
+
+.work-content .grid .grid-item--width2 {
+  width: 48%;
+  margin-top: 4%;
 }
 
 
@@ -288,7 +306,7 @@ table  {
 /*Team */
 
 .background-pic-team {
-  background: url('../images/sunset-girl.jpg') no-repeat center;
+  background: url('../images/salon.jpg') no-repeat center;
  background-size: cover;
   position:fixed;
   left:0;
@@ -351,11 +369,9 @@ table  {
 }
 
 .salon-content {
-  height:500px;
   position:relative;
   background-color: #FDFDFD;
   z-index: 200;
-  margin-top: 280px;
   line-height: 1.5;
   padding:20px;
 
@@ -507,30 +523,70 @@ header .menu {
   text-transform: uppercase;
 }
 
-header nav.mobile {
-  display: inline-block;
-  background-color: #343434;
-  position: relative;
-  clear: both;
-  float: left;
+.collapsing-dropdown {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  width: 300px;
+  right: 0;
   display: none;
-  width: 100%;
-  margin-bottom: 20px;
-  z-index: 20;
+  background: white;
+  z-index: 2000;
+  overflow: visible;
 }
 
-header nav.mobile a li {
+.collapsing-dropdown ul li a {
+  display: block;
+  padding: 15px;
+}
+
+.collapsing-dropdown {
+  display: none;
+  overflow: visible !important;
+}
+
+.collapsing-dropdown button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.collapsing-dropdown ul {
+  margin-top: 40px;
+}
+
+.collapsing-dropdown ul li {
   list-style: none;
-  line-height: 50px;
-  padding-left: 12px;
-  border-top: 1px solid #6d6c6c;
-
+  border: none;
 }
 
-.home-hero {
-  padding-left: 0;
-
+.collapsing-dropdown ul li a {
+  background: white;
+  color: #2d2d2d;
+  text-decoration: none;
+  font-size: 16px;
 }
+
+.collapsing-dropdown ul li a:hover {
+  padding-left: 20px;
+  transition: all 0.3s ease-in-out;
+  text-decoration: underline;
+}
+
+.backdrop {
+  opacity: 0.6;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+}
+
 
 .home-hero img {
   margin-top: 50px;

@@ -16,10 +16,15 @@
   <link rel="stylesheet" href="css/fontello-ie7.css">
 
   <link rel='icon' type='image/x-icon' href='images/faviconlogo.ico' />
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" media="all" />
 
 
-	<script src="js/jquery.js"></script>
-	<script src="js/script.js"></script>
+  <script src="../js/jquery.js"></script>
+  <script
+  src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -52,22 +57,37 @@
       </nav>
 
 
-      <div class="menu">
+      <div class="menu trigger-toggle-menu" data-target=".collapsing-dropdown">
         <i class="icon-menu"></i><span>Menu</span>
       </div>
-
-      <nav class = "mobile">
-        <a href="/about"><li>About</li></a>
-        <a href="/services"><li>Services</li></a>
-        <a href="/work"><li>Our Work</li></a>
-        <a href="/team"><li>Our Team</li></a>
-        <a href="/salon"><li>Salon</li></a>
-      </nav>
 
     </header>
 
     <div class="home-hero">
-    	<img src="images/hero.png" alt="">
+      <div class='hero'>
+        <h2>
+          We love hair <br> & beauty
+        </h2>
+        <span>Drop by the salon or call us
+          <br>
+          to arrange an appointment
+          <br>
+          01244 851 519
+        </span>
+      </div>
+    </div>
+
+    <div class="collapsing-dropdown">
+      <button class='trigger-toggle-menu close' data-target=".collapsing-dropdown">
+        <image src="../images/cancel.png" alt="" width="20px">
+      </button>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/work">Our Work</a></li>
+        <li><a href="/team">Our Team</a></li>
+        <li><a href="/salon">Salon</a></li>
+      </ul>
     </div>
 
     <footer>

@@ -14,10 +14,15 @@
   <link rel="stylesheet" href="../css/fontello-codes.css">
   <link rel="stylesheet" href="../css/fontello-ie7.css">
   <link rel='icon' type='image/x-icon' href='../images/faviconlogo.ico' />
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" media="all" />
 
 
-	<script src="../js/jquery.js"></script>
-	<script src="../js/script.js"></script>
+  <script src="../js/jquery.js"></script>
+  <script
+  src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+  <script src="../js/script.js"></script>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -48,24 +53,33 @@
         <a href="/salon"><ul>Salon</ul></a>
       </nav>
 
-      <div class="menu">
+      <div class="menu trigger-toggle-menu" data-target=".collapsing-dropdown">
         <i class="icon-menu"></i><span>Menu</span>
       </div>
 
-      <nav class = "mobile">
-        <a href="/about"><li>About</li></a>
-        <a href="/services"><li>Services</li></a>
-        <a href="/work"><li>Our Work</li></a>
-        <a href="/team"><li>Our Team</li></a>
-        <a href="/salon"><li>Salon</li></a>
-      </nav>
 
     </header>
 
+    <div class="collapsing-dropdown">
+      <button class='trigger-toggle-menu close' data-target=".collapsing-dropdown">
+        <image src="../images/cancel.png" alt="" width="20px">
+      </button>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/work">Our Work</a></li>
+        <li><a href="/team">Our Team</a></li>
+        <li><a href="/salon">Salon</a></li>
+      </ul>
+    </div>
+
     <div class="services-content">
       <div class="hair">
-       <h3>Hair</h3>
-       <img src="../images/scissors.png" alt="">
+       <h3>
+         Hair
+         <img src="../images/scissors.png" alt="">
+       </h3>
+
       </div>
 
       <div class="row">
@@ -217,61 +231,34 @@
 
 
       <div class="beauty">
-        <h3>Beauty</h3>
-        <img src="../images/beauty.png" alt="">
+        <h3>
+          Beauty
+          <img src="../images/beauty.png" alt="">
+        </h3>
+
       </div>
-        <div class="row">
+      <div class="row">
 
         <div class="five columns left">
           <div class="content">
             <table>
-
               <thead>
                 <tr>
-                  <th></th>
+                  <th>Manicure/Pedicure</th>
                 </tr>
               </thead>
 
               <tbody>
                 <tr class="toprow">
-                  <td></td>
-                  <td class = "price"></td>
+                  <td>Manicure 1 hour (add shellac for £6)</td>
+                  <td class = "price">£25</td>
                 </tr>
                 <tr>
-                  <td></td>
-                  <td class = "price"></td>
+                  <td>Pedicure 1 hour (add shellac for £6)</td>
+                  <td class = "price">£25</td>
                 </tr>
-                <tr>
-                  <td></td>
-                  <td class = "price"></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td class = "price"></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td class = "price"></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td class = "price"></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td class = "price"></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td class = "price"></td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td class = "price"></td>
-                </tr>
-
-
               </tbody>
+
             </table>
           </div>
         </div>
@@ -303,63 +290,276 @@
         </div>
 
         <div class="five columns right">
-          <table>
-            <thead>
-              <tr>
-                <th></th>
-              </tr>
-            </thead>
+          <div class="content">
+            <table>
+              <thead>
+                <tr>
+                  <th>Lip/Chin Waxing</th>
+                </tr>
+              </thead>
 
-            <tbody>
-              <tr class="toprow">
-                <td></td>
-                <td class = "price"></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class = "price"></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class = "price"></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class = "price"></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class = "price"></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class = "price"></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class = "price"></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class = "price"></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class = "price"></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td class = "price"></td>
-              </tr>
+              <tbody>
+                <tr class="toprow">
+                  <td>Lip wax 15 mins</td>
+                  <td class = "price">£8</td>
+                </tr>
+                <tr>
+                  <td>Chin wax 15 mins</td>
+                  <td class = "price">£10</td>
+                </tr>
+                <tr>
+                  <td>Package offer</td>
+                  <td class = "price">£15</td>
+                </tr>
 
-            </tbody>
-          </table>
+              </tbody>
+            </table>
+          </div>
         </div>
 
+      </div>
+
+      <div class="row">
+
+        <div class="five columns left">
+          <div class="content">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nailtiques</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="toprow">
+                  <td>Nailtiques File shape & polish 15 mins</td>
+                  <td class = "price">£15</td>
+                </tr>
+                <tr>
+                  <td>Nailtiques Toes flie shape & polish 15 mins</td>
+                  <td class = "price">£15</td>
+                </tr>
+                <tr>
+                  <td>Package offer 30 mins</td>
+                  <td class = "price">£25</td>
+                </tr>
+
+              </tbody>
+
+
+            </table>
+          </div>
         </div>
+
+        <div class="six columns middle">
+          <div class="content">
+            <table>
+              <thead>
+                <tr>
+                  <th>Waxing</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr class="toprow">
+                  <td>Eyebrow wax 15 mins</td>
+                  <td class = "price">£11</td>
+                </tr>
+                <tr>
+                  <td>Full leg wax 45 mins</td>
+                  <td class = "price">£25</td>
+                </tr>
+                <tr>
+                  <td>Half leg wax 30 mins</td>
+                  <td class = "price">£18</td>
+                </tr>
+                <tr>
+                  <td>Bikini wax 15 mins</td>
+                  <td class = "price">£15</td>
+                </tr>
+                <tr>
+                  <td>Underarm 15 mins</td>
+                  <td class = "price">£14</td>
+                </tr>
+                <tr>
+                  <td>Womens waxing package 1 hour 30 mins</td>
+                  <td class = "price">£60</td>
+                </tr>
+                <tr>
+                  <td>Backwax 30 mins - 1 hour</td>
+                  <td class = "price">£25-40</td>
+                </tr>
+                <tr>
+                  <td>Chestwax 30 mins - 1 hour</td>
+                  <td class = "price">£25-40</td>
+                </tr>
+                <tr>
+                  <td>Back and Chest wax 1 - 2 hours</td>
+                  <td class = "price">£45-75</td>
+                </tr>
+
+              </tbody>
+
+            </table>
+          </div>
+        </div>
+
+        <div class="five columns right">
+          <div class="content">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tinting</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="toprow">
+                  <td>Eyelash tint 15 mins</td>
+                  <td class = "price">£12</td>
+                </tr>
+                <tr>
+                  <td>Eyebrow tint 15 mins</td>
+                  <td class = "price">£11</td>
+                </tr>
+                <tr>
+                  <td>Package offer choose any 3 tinting & facial waxing</td>
+                  <td class = "price">£30</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="five columns left">
+          <div class="content">
+            <table>
+              <thead>
+                <tr>
+                  <th>Sienna x Spraytan</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="toprow">
+                  <td>Fullbody 15 mins</td>
+                  <td class = "price">£20</td>
+                </tr>
+                <tr>
+                  <td>Halfbody 15 mins</td>
+                  <td class = "price">£15</td>
+                </tr>
+
+              </tbody>
+
+
+            </table>
+          </div>
+        </div>
+
+        <div class="six columns middle">
+          <div class="content">
+            <table>
+              <thead>
+                <tr>
+                  <th>Makeup</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr class="toprow">
+                  <td>Makeup including lashes 1 hour 15 mins</td>
+                  <td class = "price">£35</td>
+                </tr>
+
+              </tbody>
+
+            </table>
+          </div>
+        </div>
+
+        <div class="five columns right">
+          <div class="content">
+            <table>
+              <thead>
+                <tr>
+                  <th>Microdermabrasion</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="toprow">
+                  <td>Face & neck</td>
+                  <td class = "price">£40</td>
+                </tr>
+                <tr>
+                  <td>Course of 3</td>
+                  <td class = "price">£108 (save £12)</td>
+                </tr>
+                <tr>
+                  <td>Course of 6</td>
+                  <td class = "price">£192 (save £48)</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="five columns left">
+          <div class="content">
+            <table>
+              <thead>
+                <tr>
+                  <th>Acrylic sculpts</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="toprow">
+                  <td>With shellac finish 1.5 - 2 hours</td>
+                  <td class = "price">£35</td>
+                </tr>
+                <tr>
+                  <td>Toes with shellac finish 1hr 30 mins</td>
+                  <td class = "price">£35</td>
+                </tr>
+                <tr>
+                  <td>Package offer</td>
+                  <td class = "price">£68</td>
+                </tr>
+                <tr>
+                  <td>Backfill with shellac finish 1 hour</td>
+                  <td class = "price">£25</td>
+                </tr>
+                <tr>
+                  <td>Removal of Acrylics / Shellac</td>
+                  <td class = "price">£5</td>
+                </tr>
+
+              </tbody>
+
+
+            </table>
+          </div>
+        </div>
+      </div>
+
+
 
       <div class="product">
-        <h3>Our Product Ranges</h3>
+        <h3><strong>Our Product Ranges</strong></h3>
       </div>
       <div class="row product-list">
         <div class="left">
